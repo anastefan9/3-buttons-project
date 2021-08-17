@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ghiceste butonul</title>
-		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<title></title>
 	</head>
-	<body>
-		<h1 style="color: rgb(0, 0, 0); text-align: center; font-size: 60px;">Ghiceste butonul castigator!</h1>
+	<body onload="create3Buttons()">
+		<h1 style="color: rgb(255, 214, 51); text-align: center; font-size: 60px;">Proiect 1</h1>
+		<h2 style="color: rgb(104, 0, 0); text-align: center; font-size: 40px;">Ghiceste butonul castigator!</h2>
 		<br>
+		<div id="box" style="text-align: center;"></div>
 		<br>
-		<div class="centerText">
-			<p id="winnerButton" style="display: none;"> Felicitari! Ai gasit butonul castigator.</p>
-			<p id="loserButton2" style="display: none;"> Butonul 2 nu este castigator</p>
-			<p id="loserButton3" style="display: none;">Butonul 3 nu este castigator. Mai incearca o data.</p>
-		</div>
-		<div class="nrRound">
-			<p id="roundMessage">Runda 1</p>
-		</div>
-		<div class="centerButton">
-			<button id="Button1" type="button" onclick="button1Function()">Buton 1</button>
-			<button id="Button2" type="button" onclick="button2Function()">Buton 2</button>
-			<button id="Button3" type="button" onclick="button3Function()">Buton 3</button>
-
-		</div>
-		<div class="nextRound">
-			<button id="nextRoundButton" type="button" style="display:none" onclick="nextButtonFunction()">Mergi la runda urmatoare</button>
-		</div>
-		<div class="finalText">
-			<h3 id="lastText" style="display: none">Felicitari! Ai terminat jocul.</h3>
+		<div style="text-align: center;">
+			<p id="winMessage" style="display: none;">Felicitari! Ai gasit butonul castigator.</p>
+			<p id="loseMessage" style="display: none;">Acesta nu este butonul castigator.</p>
 		</div>
 		<script src='myScript.js'></script>
 	</body>
