@@ -6,13 +6,13 @@ function create3Buttons() {
 	for (var i = 1; i <= 3; ++i) {
 		var container = document.getElementById("box");
 		var button = document.createElement("BUTTON");
-	    container.appendChild(button);
-	    button.innerHTML = "Buton" + " " + i;
-	    if (i == win_nr) {
-	    	button.onclick = function() {getMessage(winVar, loseVar)};
-	    } else {
-	    	button.onclick = function() {getMessage(loseVar, winVar)};
-	    }
+		container.appendChild(button);
+		button.innerHTML = "Buton" + " " + i;
+		if (i == win_nr) {
+			button.onclick = function() {getMessage(winVar, loseVar)};
+		} else {
+			button.onclick = function() {getMessage(loseVar, winVar)};
+		}
 	}
 }
 function getRandomNumber(min, max) {
